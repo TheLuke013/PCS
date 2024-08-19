@@ -142,6 +142,13 @@
       <Command>IF EXIST ..\bin\Dist-windows-x86_64\CPU\CPU.dll\ (xcopy /Q /E /Y /I ..\bin\Dist-windows-x86_64\CPU\CPU.dll ..\bin\Dist-windows-x86_64\PCS &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Dist-windows-x86_64\CPU\CPU.dll ..\bin\Dist-windows-x86_64\PCS &gt; nul)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\CPU.h" />
+    <ClInclude Include="src\Core.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CPU.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

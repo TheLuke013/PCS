@@ -149,6 +149,20 @@
   <ItemGroup>
     <ClCompile Include="src\Motherboard.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CPU\CPU.vcxproj">
+      <Project>{8DDA870B-F9E3-877C-825F-9E7CEE67937C}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\GPU\GPU.vcxproj">
+      <Project>{91EB870B-FDF4-877C-8670-9E7CF278937C}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\RAM\RAM.vcxproj">
+      <Project>{6518880B-D121-887C-5A9D-9E7CC6A5937C}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Storage\Storage.vcxproj">
+      <Project>{5A86900F-C665-0FAB-CF7D-9A813BDC750C}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -18,8 +18,7 @@ namespace Computer
 
 	void Computer::Boot()
 	{
-		system("cls");
-		std::cout << "Initializing..." << std::endl;
+		Motherboard::Motherboard* motherboard = new Motherboard::Motherboard();
 	}
 
 	void Computer::Shutdown()
@@ -39,8 +38,6 @@ namespace Computer
 					canInitialize = true;
 					system("cls");
 					std::cout << "Motherboard detected" << std::endl;
-
-					Sleep(1500);
 					Boot();
 				}
 				else

@@ -88,6 +88,14 @@ project "Motherboard"
         
     }
 
+    links
+    {
+        "CPU",
+        "GPU",
+        "RAM",
+        "Storage"
+    }
+
     filter "system:windows"
         cppdialect "C++17"
         systemversion "latest"
