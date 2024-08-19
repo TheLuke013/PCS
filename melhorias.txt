@@ -1,0 +1,2 @@
+-console mais robusto para o PCS
+-detectar se as dlls existem antes de carrega-las no metodo CheckHardware
