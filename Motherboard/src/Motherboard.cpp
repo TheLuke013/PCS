@@ -7,6 +7,7 @@ namespace Motherboard
 {
 	Motherboard::Motherboard()
 	{
+		//detecta os componentes do pc
 		while (componentsDetected != MAX_COMPONENTS)
 		{
 			system("cls");
@@ -19,10 +20,9 @@ namespace Motherboard
 			}
 		}
 
-		Sleep(1000);
-		system("cls");
-		std::cout << "Initializing..." << std::endl;
-		Beep(2000, 300);
+		//inicializa a BIOS
+		BIOS bios;
+		bios.PerformPOST();
 	}
 
 	Motherboard::~Motherboard()

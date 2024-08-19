@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="BIOS">
+      <UniqueIdentifier>{9281827C-7EB8-830D-27A5-691013BBFF0E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\BIOS\BIOS.h">
+      <Filter>BIOS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core.h" />
+    <ClInclude Include="src\Motherboard.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\BIOS\BIOS.cpp">
+      <Filter>BIOS</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Motherboard.cpp" />
+  </ItemGroup>
+</Project>

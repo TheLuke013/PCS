@@ -7,6 +7,7 @@
 namespace Computer
 {
 	Computer::Computer()
+		: motherboard(nullptr)
 	{
 		Standby();
 	}
@@ -18,7 +19,7 @@ namespace Computer
 
 	void Computer::Boot()
 	{
-		Motherboard::Motherboard* motherboard = new Motherboard::Motherboard();
+		motherboard = new Motherboard::Motherboard();
 	}
 
 	void Computer::Shutdown()

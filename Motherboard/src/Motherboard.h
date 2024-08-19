@@ -2,6 +2,7 @@
 #define MOTHERBOARD_H
 
 #include "Core.h"
+#include "BIOS/BIOS.h"
 
 #define MAX_COMPONENTS 4
 

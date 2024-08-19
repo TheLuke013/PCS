@@ -21,6 +21,8 @@ namespace Computer
 		bool isOn = true;
 		bool canInitialize = false;
 
+		Motherboard::Motherboard* motherboard;
+
 	};
 }
 

@@ -142,7 +142,7 @@ project "CPU"
 
     includedirs
     {
-        
+        "ThirdParty/nlohman"
     }
 
     filter "system:windows"
@@ -191,7 +191,8 @@ project "GPU"
 
     includedirs
     {
-        "ThirdParty/raylib/include"
+        "ThirdParty/raylib/include",
+        "ThirdParty/nlohman"
     }
 
     links
@@ -254,7 +255,7 @@ project "RAM"
 
     includedirs
     {
-        
+        "ThirdParty/nlohman"
     }
 
     filter "system:windows"
@@ -303,7 +304,7 @@ project "Storage"
 
     includedirs
     {
-        
+        "ThirdParty/nlohman"
     }
 
     filter "system:windows"

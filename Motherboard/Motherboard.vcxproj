@@ -143,10 +143,12 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\BIOS\BIOS.h" />
     <ClInclude Include="src\Core.h" />
     <ClInclude Include="src\Motherboard.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\BIOS\BIOS.cpp" />
     <ClCompile Include="src\Motherboard.cpp" />
   </ItemGroup>
   <ItemGroup>
