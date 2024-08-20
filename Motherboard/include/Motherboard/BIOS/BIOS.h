@@ -1,10 +1,15 @@
 #ifndef BIOS_H
 #define BIOS_H
 
-#include "../Core.h"
-
 #include <iostream>
 #include <Windows.h>
+
+#include <CPU/CPU.h>
+#include <GPU/GPU.h>
+#include <RAM/RAM.h>
+#include <Storage/Storage.h>
+
+#include <Motherboard/Core.h>
 
 namespace Motherboard
 {
@@ -20,6 +25,11 @@ namespace Motherboard
 
 	private:
 		bool systemInitalized = false;
+
+		CPU::CPU* cpu;
+		GPU::GPU* gpu;
+		RAM::RAM* ram;
+		Storage::Storage* storage;
 
 	};
 }

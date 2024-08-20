@@ -1,4 +1,4 @@
-#include "CPU.h"
+#include <CPU/CPU.h>
 
 namespace CPU
 {
@@ -7,6 +7,15 @@ namespace CPU
 	}
 
 	CPU::~CPU()
+	{
+
+	}
+	bool CPU::StartCPU()
+	{
+		return false;
+	}
+
+	void CPU::ShowInfo()
 	{
 	}
 }

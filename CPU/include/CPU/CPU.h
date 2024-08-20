@@ -1,7 +1,7 @@
 #ifndef CPU_H
 #define CPU_H
 
-#include "Core.h"
+#include <CPU/Core.h>
 
 namespace CPU
 {
@@ -10,6 +10,9 @@ namespace CPU
 	public:
 		CPU();
 		~CPU();
+
+		bool StartCPU();
+		void ShowInfo();
 	};
 }
 

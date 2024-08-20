@@ -1,4 +1,4 @@
-#include "GPU.h"
+#include <GPU/GPU.h>
 
 namespace GPU
 {

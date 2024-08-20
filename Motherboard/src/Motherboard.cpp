@@ -1,7 +1,9 @@
-#include "Motherboard.h"
+#include <Motherboard/Motherboard.h>
 
 #include <Windows.h>
 #include <iostream>
+
+#include <CPU/CPU.h>
 
 namespace Motherboard
 {
@@ -22,7 +24,7 @@ namespace Motherboard
 
 		//inicializa a BIOS
 		BIOS bios;
-		bios.PerformPOST();
+		bios.InitializeSystem();
 	}
 
 	Motherboard::~Motherboard()
@@ -76,7 +78,7 @@ namespace Motherboard
 			std::cout << "Storage not detected!" << std::endl;
 		}
 
-		std::cout << componentsDetected << std::endl;
+		std::cout << componentsDetected << " components detected\n\n";
 	}
 
 	bool Motherboard::CheckDll(const char* dllName)

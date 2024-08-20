@@ -36,7 +36,8 @@ project "PCS"
     includedirs
     {
         "ThirdParty/raylib/include",
-        "Motherboard/src"
+        "Motherboard/include",
+        "ThirdParty/nlohman"
     }
 
     links
@@ -71,7 +72,7 @@ project "Motherboard"
 
     files
     {
-        "%{prj.name}/src/**.h",
+        "%{prj.name}/include/**.h",
         "%{prj.name}/src/**.cpp"
     }
 
@@ -85,7 +86,12 @@ project "Motherboard"
 
     includedirs
     {
-        
+        "%{prj.name}/include",
+        "CPU/include",
+        "GPU/include",
+        "RAM/include",
+        "Storage/include",
+        "ThirdParty/nlohman"
     }
 
     links
@@ -128,7 +134,7 @@ project "CPU"
 
     files
     {
-        "%{prj.name}/src/**.h",
+        "%{prj.name}/include/**.h",
         "%{prj.name}/src/**.cpp"
     }
 
@@ -142,7 +148,8 @@ project "CPU"
 
     includedirs
     {
-        "ThirdParty/nlohman"
+        "ThirdParty/nlohman",
+        "%{prj.name}/include"
     }
 
     filter "system:windows"
@@ -177,7 +184,7 @@ project "GPU"
 
     files
     {
-        "%{prj.name}/src/**.h",
+        "%{prj.name}/include/**.h",
         "%{prj.name}/src/**.cpp"
     }
 
@@ -192,7 +199,8 @@ project "GPU"
     includedirs
     {
         "ThirdParty/raylib/include",
-        "ThirdParty/nlohman"
+        "ThirdParty/nlohman",
+        "%{prj.name}/include"
     }
 
     links
@@ -241,7 +249,7 @@ project "RAM"
 
     files
     {
-        "%{prj.name}/src/**.h",
+        "%{prj.name}/include/**.h",
         "%{prj.name}/src/**.cpp"
     }
 
@@ -255,7 +263,8 @@ project "RAM"
 
     includedirs
     {
-        "ThirdParty/nlohman"
+        "ThirdParty/nlohman",
+        "%{prj.name}/include"
     }
 
     filter "system:windows"
@@ -290,7 +299,7 @@ project "Storage"
 
     files
     {
-        "%{prj.name}/src/**.h",
+        "%{prj.name}/include/**.h",
         "%{prj.name}/src/**.cpp"
     }
 
@@ -304,7 +313,8 @@ project "Storage"
 
     includedirs
     {
-        "ThirdParty/nlohman"
+        "ThirdParty/nlohman",
+        "%{prj.name}/include"
     }
 
     filter "system:windows"

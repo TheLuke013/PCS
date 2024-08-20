@@ -1,7 +1,7 @@
 #ifndef COMPUTER_H
 #define COMPUTER_H
 
-#include "Motherboard.h"
+#include <Motherboard/Motherboard.h>
 
 namespace Computer
 {
