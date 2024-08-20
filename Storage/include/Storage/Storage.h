@@ -10,6 +10,9 @@ namespace Storage
 	public:
 		Storage();
 		~Storage();
+
+		bool StartStorage();
+		void ShowInfo();
 	};
 }
 

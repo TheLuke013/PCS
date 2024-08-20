@@ -9,4 +9,13 @@ namespace GPU
 	GPU::~GPU()
 	{
 	}
+
+	bool GPU::StartGPU()
+	{
+		return false;
+	}
+
+	void GPU::ShowInfo()
+	{
+	}
 }

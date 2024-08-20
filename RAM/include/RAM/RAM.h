@@ -10,6 +10,9 @@ namespace RAM
 	public:
 		RAM();
 		~RAM();
+
+		bool StartRAM();
+		void ShowInfo();
 	};
 }
 

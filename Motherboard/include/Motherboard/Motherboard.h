@@ -1,8 +1,8 @@
 #ifndef MOTHERBOARD_H
 #define MOTHERBOARD_H
 
-#include "Core.h"
-#include "BIOS/BIOS.h"
+#include "Motherboard/Core.h"
+#include "Motherboard/BIOS.h"
 
 #define MAX_COMPONENTS 4
 

@@ -1,4 +1,9 @@
-#include <Motherboard/BIOS/BIOS.h>
+#include <Motherboard/BIOS.h>
+
+#include <CPU/CPU.h>
+#include <GPU/GPU.h>
+#include <RAM/RAM.h>
+#include <Storage/Storage.h>
 
 namespace Motherboard
 {
@@ -22,6 +27,7 @@ namespace Motherboard
 		else
 		{
 			std::cout << "System initialization failed" << std::endl;
+			Sleep(5000);
 		}
 	}
 
@@ -34,10 +40,16 @@ namespace Motherboard
 			return false;
 
 		//GPU
+		if (!gpu->StartGPU())
+			return false;
 
 		//RAM
+		if (!ram->StartRAM())
+			return false;
 
 		//Storage
+		if (!storage->StartStorage())
+			return false;
 
 		return true;
 	}

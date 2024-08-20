@@ -7,19 +7,13 @@
     <Filter Include="include\Motherboard">
       <UniqueIdentifier>{8F86AA1D-FBE7-872B-8455-CEDDF0B5BEEA}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\Motherboard\BIOS">
-      <UniqueIdentifier>{ABE9371C-970E-879C-C059-6C2CACDD85BA}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src">
       <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\BIOS">
-      <UniqueIdentifier>{09A11BCF-F56D-76DA-1E87-64820AB3AB68}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\Motherboard\BIOS\BIOS.h">
-      <Filter>include\Motherboard\BIOS</Filter>
+    <ClInclude Include="include\Motherboard\BIOS.h">
+      <Filter>include\Motherboard</Filter>
     </ClInclude>
     <ClInclude Include="include\Motherboard\Core.h">
       <Filter>include\Motherboard</Filter>
@@ -29,8 +23,8 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\BIOS\BIOS.cpp">
-      <Filter>src\BIOS</Filter>
+    <ClCompile Include="src\BIOS.cpp">
+      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\Motherboard.cpp">
       <Filter>src</Filter>

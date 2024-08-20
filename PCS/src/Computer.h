@@ -11,14 +11,9 @@ namespace Computer
 		Computer();
 		~Computer();
 
-		void Boot();
-		void Shutdown();
-
 	private:
-		void Standby();
 		bool CheckMotherboard();
 
-		bool isOn = true;
 		bool canInitialize = false;
 
 		Motherboard::Motherboard* motherboard;

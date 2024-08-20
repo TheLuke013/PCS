@@ -9,27 +9,7 @@ namespace Computer
 	Computer::Computer()
 		: motherboard(nullptr)
 	{
-		Standby();
-	}
-
-	Computer::~Computer()
-	{
-
-	}
-
-	void Computer::Boot()
-	{
-		motherboard = new Motherboard::Motherboard();
-	}
-
-	void Computer::Shutdown()
-	{
-		isOn = false;
-	}
-
-	void Computer::Standby()
-	{
-		while (isOn)
+		while (!canInitialize)
 		{
 			//verifica se a placa mãe esta presente
 			if (!canInitialize)
@@ -39,7 +19,8 @@ namespace Computer
 					canInitialize = true;
 					system("cls");
 					std::cout << "Motherboard detected" << std::endl;
-					Boot();
+
+					motherboard = new Motherboard::Motherboard();
 				}
 				else
 				{
@@ -49,6 +30,11 @@ namespace Computer
 				}
 			}
 		}
+	}
+
+	Computer::~Computer()
+	{
+
 	}
 
 	//checa a presença da placa mãe

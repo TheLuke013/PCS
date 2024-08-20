@@ -9,4 +9,13 @@ namespace Storage
 	Storage::~Storage()
 	{
 	}
+
+	bool Storage::StartStorage()
+	{
+		return false;
+	}
+
+	void Storage::ShowInfo()
+	{
+	}
 }

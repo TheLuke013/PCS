@@ -4,12 +4,27 @@
 #include <iostream>
 #include <Windows.h>
 
-#include <CPU/CPU.h>
-#include <GPU/GPU.h>
-#include <RAM/RAM.h>
-#include <Storage/Storage.h>
-
 #include <Motherboard/Core.h>
+
+namespace CPU
+{
+	class CPU;
+}
+
+namespace GPU
+{
+	class GPU;
+}
+
+namespace RAM
+{
+	class RAM;
+}
+
+namespace Storage
+{
+	class Storage;
+}
 
 namespace Motherboard
 {

@@ -146,8 +146,8 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="include\CPU\Core.h" />
     <ClInclude Include="include\CPU\CPU.h" />
+    <ClInclude Include="include\CPU\Core.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\CPU.cpp" />

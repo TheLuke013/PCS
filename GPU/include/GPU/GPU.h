@@ -10,6 +10,9 @@ namespace GPU
 	public:
 		GPU();
 		~GPU();
+
+		bool StartGPU();
+		void ShowInfo();
 	};
 }
 

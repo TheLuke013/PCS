@@ -9,4 +9,13 @@ namespace RAM
 	RAM::~RAM()
 	{
 	}
+
+	bool RAM::StartRAM()
+	{
+		return false;
+	}
+
+	void RAM::ShowInfo()
+	{
+	}
 }
